@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Fuzzy Utils.iml" filepath="$PROJECT_DIR$/.idea/Fuzzy Utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pyro Tools.iml" filepath="$PROJECT_DIR$/.idea/Pyro Tools.iml" />
     </modules>
   </component>
 </project>

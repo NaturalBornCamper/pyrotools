@@ -1,9 +1,31 @@
+from json import dumps
 from sys import stdout
 
-from fuzzyutils import constants
+from pyrotools import _constants
 
 
-def query_yes_no(question, default="no", color=constants.COLORS.RESET):
+class COLORS(_constants.COLORS):
+    pass
+
+
+def cprint(color, *values):
+    print(color, end="", flush=True)
+    for value in values:
+        print(value, end=" ", flush=True)
+    print(COLORS.RESET)
+
+
+def pprint(var):
+    print(dumps(var, sort_keys=True, indent=3))
+
+
+def cpprint(color, var):
+    print(color, end="", flush=True)
+    pprint(var)
+    print(COLORS.RESET)
+
+
+def query_yes_no(question, default="no", color=_constants.COLORS.RESET):
     """Ask a yes/no question via raw_input() and return their answer.
 
     "question" is a string that is presented to the user.
@@ -25,7 +47,7 @@ def query_yes_no(question, default="no", color=constants.COLORS.RESET):
         raise ValueError("invalid default answer: '%s'" % default)
 
     while True:
-        stdout.write(color + question + constants.COLORS.RESET + prompt)
+        stdout.write(color + question + COLORS.RESET + prompt)
         choice = input().lower()
         if default is not None and choice == '':
             return valid[default]

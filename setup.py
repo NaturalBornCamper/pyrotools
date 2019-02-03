@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='Fuzzy Utils',
+    name='pyrotools',
     version='0.0.1',
     packages=setuptools.find_packages(),
     # packages=['venv.Lib.site-packages.pip-10.0.1-py3.7.egg.pip',
@@ -46,7 +46,7 @@ setuptools.setup(
     #           'venv.Lib.site-packages.pip-10.0.1-py3.7.egg.pip._internal.models',
     #           'venv.Lib.site-packages.pip-10.0.1-py3.7.egg.pip._internal.commands',
     #           'venv.Lib.site-packages.pip-10.0.1-py3.7.egg.pip._internal.operations'],
-    url='https://github.com/NaturalBornCamper/fuzzy-utils',
+    url='https://github.com/NaturalBornCamper/pyrotools',
     license='Apache 2.0',
     author='NaturalBornCamper',
     author_email='pypi@naturalborncamper.com',
