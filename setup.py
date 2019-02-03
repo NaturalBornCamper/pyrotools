@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='pyrotools',
-    version='0.0.1',
+    version='1.0.0',
     packages=setuptools.find_packages(),
     # packages=['venv.Lib.site-packages.pip-10.0.1-py3.7.egg.pip',
     #           'venv.Lib.site-packages.pip-10.0.1-py3.7.egg.pip._vendor',
